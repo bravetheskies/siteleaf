@@ -1,0 +1,490 @@
+@import url(//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:900);
+
+/*------------------------------------*\
+    Base
+\*------------------------------------*/
+
+html {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 27px;
+    @media screen and (max-width: 700px) {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+.Container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px;
+    &.wide {
+        max-width: 100%;
+    }
+    @media screen and (max-width: 700px) {
+        padding: 20px;
+    }
+}
+
+hr {
+    border: 0;
+    margin: 2em 0;
+}
+
+/*------------------------------------*\
+    Fonts
+\*------------------------------------*/
+
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 900;
+}
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+    line-height: 1.1em;
+    margin-bottom: 1em;
+    letter-spacing: 0.02em;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
+    margin-top: 1.2em;
+    letter-spacing: 0.02em;
+}
+
+h4 {
+    font-size: 1.7em;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
+    margin-top: 1.2em;
+    letter-spacing: 0.02em;
+}
+
+h5 {
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin-top: 1.2em;
+    margin-bottom: 0.7em;
+    letter-spacing: 0.02em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+h1 {
+    @media screen and (max-width: 700px) {
+        font-size: 3em;
+    }
+}
+
+p {
+    margin: 0;
+    margin-bottom: 23px;
+}
+
+a {
+    color: #000;
+    &:hover{
+     	text-decoration: none;
+    }
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+
+
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+.small {
+    font-size: 0.7em;
+}
+
+
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+
+header {
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+
+    .logo {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:#fff;
+        font-size: 0.8em;
+        width: 80px;
+        margin-top: -10px;
+        @media screen and (max-width: 700px) {
+        margin-top: 0px;
+        }
+    }
+    .contact {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 1em;
+            border-bottom: solid #00e7ff 4px;
+            @media screen and (max-width: 700px) {
+                padding-top: 0px;
+                margin: 0 15px 0 0;
+            }
+            &:hover {
+                border-bottom: solid #fff 2px;
+                ;
+            }
+        }
+        &.alt a {
+            color: #29463f;
+            &:hover {
+                border-bottom: solid #29463f 2px;
+                ;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            padding-top: 0px;
+        }
+    }
+}
+
+.about {
+    position: absolute;
+    z-index: 9990;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    border-bottom: solid #00e7ff 4px;
+    ;
+    bottom: 40px;
+    left: 40px;
+    padding: 5px 0px;
+    &:hover {
+        text-decoration: none;
+        border-bottom: solid #fff 2px;
+        ;
+    }
+    @media screen and (max-width: 700px) {
+        bottom: 20px;
+        left: 20px;
+    }
+}
+.shopify {
+    position: absolute;
+    z-index: 9990;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    border-bottom: solid #fff 0px;
+    ;
+    bottom: 40px;
+    right: 40px;
+    padding: 0px;
+    &:hover {
+        text-decoration: none;
+        ;
+    }
+    img{
+    padding: 0!important;
+    max-width: 200px!important;
+    @media screen and (max-width: 700px) {
+    max-width: 140px!important;
+    }
+    }
+    @media screen and (max-width: 700px) {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+
+
+/*------------------------------------*\
+    Slider
+\*------------------------------------*/
+
+.Wallop {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.Wallop-item {
+    height: 100%;
+}
+
+.Wallop-list {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: table;
+    .brave {
+        background-color: #000;
+        background: url(../img/space.jpg);
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size: 100% auto;
+        @media screen and (max-width: 1023px) {
+            background-size: 170%
+        }
+
+    }
+    .the {
+        background-color: #6961aa;
+        background: url(../img/space.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 100% auto;
+        @media screen and (max-width: 1023px) {
+           background-size: 170%
+        }
+    }
+    .skies {
+        background-color: #e17e97;
+        background: url(../img/space.jpg);
+        background-position-x: center;
+        background-position-y: top;
+        background-size: 100% auto;
+        @media screen and (max-width: 1023px) {
+            background-size: 170%
+        }
+    }
+    .consulting {
+        background-color: #9b9881;
+    }
+}
+
+.cellholder {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+    display: table;
+    .cell {
+        display: table-cell;
+        text-align: left;
+        vertical-align: center;
+        padding: 40px;
+        @media screen and (max-width: 700px) {
+        padding: 20px;
+        }
+        @media screen and (max-width: 480px) {
+            text-align: center;
+        }
+        &.top{
+        vertical-align: top;
+        @media screen and (max-width: 700px) {
+            vertical-align: middle;
+        }
+        }
+        &.middle{
+        vertical-align: middle;
+        @media screen and (max-width: 700px) {
+            vertical-align: middle;
+        }
+        }
+        &.bottom{
+         vertical-align: bottom;
+         @media screen and (max-width: 700px) {
+            vertical-align: middle;
+        }
+        }
+        h1{
+            padding-top:130px;
+            padding-bottom:130px;
+            font-size: 11em;
+            color: #fff;
+            text-transform: uppercase;
+            @media screen and (max-width: 480px) {
+                font-size: 3em;
+            }
+            @media screen and (max-width: 700px) {
+                font-size: 5em;
+            }
+        }
+    }
+}
+
+.Wallop img {
+    vertical-align: middle;
+    width: 100%;
+    max-width: 500px;
+    padding: 200px 0;
+    -webkit-backface-visibility: hidden;
+    @media screen and (max-width: 700px) {
+        max-width: 250px;
+    }
+}
+
+
+/*------------------------------------*\
+    Main
+\*------------------------------------*/
+
+#main {
+    margin-top: 100px;
+    @media screen and (max-width: 700px) {
+        margin-top: 60px;
+    }
+}
+
+.single {
+    header {
+        position: relative;
+    }
+    #main {
+        margin-top: 100px;
+    }
+}
+
+.breifing{
+    margin-bottom: 0;
+}
+
+.makecontact{
+
+    a{
+    border-bottom: solid #00e7ff 4px;
+    text-decoration: none;
+    &:hover {
+                border-bottom: solid #00e7ff 2px;;
+            }
+    }
+}
+
+.channels{
+	font-size: 0.7em;
+	margin-bottom: 0.7em;
+}
+
+.small{
+	font-size: 0.7em;
+}
+
+/*------------------------------------*\
+    Footers
+\*------------------------------------*/
+
+footer {
+    font-size: 0.7em;
+    width: 100%;
+    bottom: 0;
+    z-index: 9999;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    padding: 60px 0px 20px 0px;
+    @media screen and (max-width: 700px) {
+        text-align: center!important;
+        padding: 40px 0px 20px 0px;
+    }
+    .grid__item {
+        @media screen and (max-width: 700px) {
+            text-align: left!important;
+            padding-top: 20px;
+        }
+    }
+    .address {
+        font-size: 1em;
+        line-height: 1.5em;
+        display: inline-block;
+    }
+    a {
+        color: #000;
+        display: inline-block;
+    }
+    .experts{
+        width: 180px;
+    }
+}
+
+#single {
+    footer {
+        position: relative;
+    }
+}
+/*------------------------------------*\
+    Ape
+\*------------------------------------*/
+.apeface{
+background: url(../img/apefacewide.gif);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -2px;
+    top: 0px;
+    background-size: 100% auto;
+    z-index: -1;
+      @media screen and (max-width: 1023px) {
+            background-size: 170%
+        }
+}
+
+.badge{
+    width: 80px;
+}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
+.clouds{
+    width: 100%;
+    height: 160px;
+    background-image: url(../img/clouds.png);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    animation: animatedBackground 150s linear infinite;
+    @media screen and (max-width: 1023px) {
+    display: none;
+    }
+}
