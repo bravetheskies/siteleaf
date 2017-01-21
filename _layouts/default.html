@@ -6,12 +6,23 @@
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="css/csswizardry-grids.css">
   <link rel="stylesheet" href="css/main.css">
-{% include head.html %}
+  {% include head.html %}
 </head>
 <body>
-  <div class="container">
-    <h1><a href="./">{{ site.tag_text }}</a></h1>
+  <header>
+      <div class="Container wide">
+  <div class="grid">
+          <div class="grid__item palm--one-half lap--one-quarter desk--one-quarter left">
+<img src="img/btslogo.svg" class="logo">
+          </div><!--
+         --><div class="grid__item palm--one-half lap--three-quarters desk--three-quarters right">
+<div class="contact"><!--<a href="tel:01904 211088" class="link">01904 211088</a>--> <a href="mailto:contact@bravetheskies.com" class="link">Make Contact</a></div>
+          </div>
+  </div>
+</header>
+  <div id="main" class="Container">
     {{ content }}
   </div>
 {% include scripts.html %}
