@@ -14,10 +14,31 @@ defaults:
     type: posts
   values:
     layout: post
-    permalink: "/posts/:title/"
+    permalink: "/logs/:title/"
 - scope:
     path: ''
     type: pages
   values:
     layout: page
 permalink: pretty
+repository: bravetheskies/siteleaf
+url: https://bravetheskies.com
+name: Brave the Skies
+email: contact@bravetheskies.com
+twitter:
+  username: bravetheskies
+facebook:
+  publisher: bravetheskies
+logo: apple-touch-icon.png
+social:
+name: Brave the Skies
+links:
+  - https://twitter.com/bravetheskies
+  - https://www.facebook.com/bravetheskies
+  - https://www.linkedin.com/in/BenBalter
+  - https://plus.google.com/+bravetheskies
+gems:
+- jekyll-seo-tag
+- jekyll-github-metadata
+- jekyll-sitemap
+- jekyll-feed
