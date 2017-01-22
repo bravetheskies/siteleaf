@@ -63,7 +63,7 @@ layout: home
 </div><!--
 
          --><div class="grid__item palm--one-whole lap--one-half desk--seven-twelfths push--desk--two-twelfths">
-        <a href="http://www.truevintageclothing.co.uk"><img src="http:img/truevintage.jpg"></a>
+        <a href="http://www.truevintageclothing.co.uk"><img src="img/truevintage.jpg"></a>
     </div>
 
 </div>
