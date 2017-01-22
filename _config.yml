@@ -25,12 +25,13 @@ repository: bravetheskies/siteleaf
 url: https://bravetheskies.com
 name: Brave the Skies
 email: contact@bravetheskies.com
+google_analytics: UA-10793928-1
 twitter:
   username: bravetheskies
 facebook:
   publisher: bravetheskies
 logo: apple-touch-icon.png
-social: 
+social:
 links:
 - https://twitter.com/bravetheskies
 - https://www.facebook.com/bravetheskies
