@@ -3,10 +3,6 @@ title: Home
 layout: home
 ---
 
----
-layout: home
----
-
 <div class="grid">
 <div class="grid__item palm--one-whole lap--one-whole desk--three-twelfths">
 <h2>Briefing</h2>
