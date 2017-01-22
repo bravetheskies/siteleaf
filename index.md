@@ -1,5 +1,7 @@
 ---
 title: Brave the Skies | Shopify Experts ¸. • ● *
+excerpt: 'We''re on a mission. We are UK Shopify Experts making e-commerce sites based
+  in York, earth.  Lift your head, brave the skies ☆  '
 layout: home
 ---
 
