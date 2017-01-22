@@ -166,16 +166,16 @@ img { width: auto; max-width: 100%; }
 
 /*------------------------------------*\ Header
 \*------------------------------------*/
-header { position: absolute; top: 0; z-index: 9999; width: 100%; }
-header .logo { display: inline-block; text-transform: uppercase; text-decoration: none; color: #fff; font-size: 0.8em; width: 80px; margin-top: -10px; }
-@media screen and (max-width: 700px) { header .logo { margin-top: 0px; } }
-header .contact { display: inline-block; }
-header .contact a { text-decoration: none; display: inline-block; margin: 0 10px; color: #fff; font-size: 1em; border-bottom: solid #00e7ff 4px; }
-@media screen and (max-width: 700px) { header .contact a { padding-top: 0px; margin: 0 15px 0 0; } }
-header .contact a:hover { border-bottom: solid #fff 2px; }
-header .contact.alt a { color: #29463f; }
-header .contact.alt a:hover { border-bottom: solid #29463f 2px; }
-@media screen and (max-width: 480px) { header .contact { padding-top: 0px; } }
+#header { position: absolute; top: 0; z-index: 9999; width: 100%; }
+#header .logo { display: inline-block; text-transform: uppercase; text-decoration: none; color: #fff; font-size: 0.8em; width: 80px; margin-top: -10px; }
+@media screen and (max-width: 700px) { #header .logo { margin-top: 0px; } }
+#header .contact { display: inline-block; }
+#header .contact a { text-decoration: none; display: inline-block; margin: 0 10px; color: #fff; font-size: 1em; border-bottom: solid #00e7ff 4px; }
+@media screen and (max-width: 700px) { #header .contact a { padding-top: 0px; margin: 0 15px 0 0; } }
+#header .contact a:hover { border-bottom: solid #fff 2px; }
+#header .contact.alt a { color: #29463f; }
+#header .contact.alt a:hover { border-bottom: solid #29463f 2px; }
+@media screen and (max-width: 480px) { #header .contact { padding-top: 0px; } }
 
 .about { position: absolute; z-index: 9990; cursor: pointer; color: #fff; font-size: 1em; text-decoration: none; border-bottom: solid #00e7ff 4px; bottom: 40px; left: 40px; padding: 5px 0px; }
 .about:hover { text-decoration: none; border-bottom: solid #fff 2px; }
