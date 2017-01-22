@@ -15,17 +15,16 @@ defaults:
   values:
     layout: post
     permalink: "/logs/:title/"
-    image:
-    description:
+    image: 
+    description: 
 - scope:
     path: ''
     type: pages
   values:
     layout: page
-permalink: pretty
+permalink: "/404.html"
 repository: bravetheskies/siteleaf
 url: https://bravetheskies.com
-permalink: /404.html
 name: Brave the Skies
 email: contact@bravetheskies.com
 google_analytics: UA-10793928-1
@@ -33,8 +32,8 @@ twitter:
   username: bravetheskies
 facebook:
   publisher: bravetheskies
-logo: /apple-touch-icon.png
-social:
+logo: "/apple-touch-icon.png"
+social: 
 links:
 - https://twitter.com/bravetheskies
 - https://www.facebook.com/bravetheskies
