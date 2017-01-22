@@ -5,4 +5,3 @@ redirect: http://getghostracer.com/
 layout: default
 ---
 
-test
