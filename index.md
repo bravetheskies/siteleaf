@@ -1,4 +1,5 @@
 ---
+title: Brave the Skies | Shopify Experts ¸. • ● *
 layout: home
 ---
 
