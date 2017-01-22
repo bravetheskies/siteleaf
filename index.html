@@ -7,15 +7,12 @@ layout: home
 
 <div class="grid">
 <div class="grid__item palm--one-whole lap--one-whole desk--three-twelfths">
-<h2>Briefing</h2>
-
+<h2 style="margin-top: 0;">Briefing</h2>
     </div><!--
-
 
          --><div class="grid__item palm--one-whole lap--one-half desk--five-twelfths push--desk--two-twelfths">
         <p>We make commerce sites using <a href="https://www.shopify.com/?ref=brave-the-skies">Shopify</a>. Latest missions listed below. View our <a href="https://experts.shopify.com/brave-the-skies">shopify experts</a> page to see what people think.</p>
     </div><!--
-
 
          --><div class="grid__item palm--one-whole lap--one-half desk--two-twelfths push--desk--two-twelfths right">
          <img src="img/btslogoalt.svg" class="badge">
@@ -24,19 +21,21 @@ layout: home
 </div>
 <hr>
 <h4>-</h4>
+{% assign sorted_missions = site.missions | sort: 'position'  %}
 
-{% assign sorted_missions = site.missions | sort: 'position' %}
-{% for item in sorted_missions %}
+{% for item in sorted_missions | limit:5 %}
 <div class="grid">
-<div class="grid__item palm--one-whole lap--one-half desk--three-twelfths">
-<h5>{{ item.title }}</h5>
-<p>{{item.content}}</p>
-<p><a href="{{ item.link }}">{{ item.link }}</a></p>
-</div><!--
+  <div class="grid__item palm--one-whole lap--one-half desk--three-twelfths">
+    <h5>{{ item.title }}</h5>
+    <p>{{item.content | markdownify}}</p>
+    {% assign shorturl = item.link | remove: "https://www." %}
+    <p><a href="{{ item.link }}">{{ shorturl | remove: "https://" }}</a></p>
+    </div><!--
 
-         --><div class="grid__item palm--one-whole lap--one-half desk--seven-twelfths push--desk--two-twelfths">
+
+    --><div class="grid__item palm--one-whole lap--one-half desk--seven-twelfths push--desk--two-twelfths">
         <a href="{{ item.link }}"><img src="{{ item.image }}" alt="{{ item.title }}"></a>
     </div>
 </div>
-<h4>-</h4
+<h4>-</h4>
 {% endfor %}
