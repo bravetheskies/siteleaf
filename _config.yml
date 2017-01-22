@@ -5,6 +5,9 @@ collections:
   posts:
     title: Posts
     output: true
+  missions:
+    title: Missions
+    output: false
   uploads:
     title: Uploads
     output: true
@@ -22,6 +25,12 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: ''
+    type: missions
+  values:
+    image:
+    link:
 permalink: pretty
 repository: bravetheskies/siteleaf
 url: https://bravetheskies.com

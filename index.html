@@ -24,6 +24,30 @@ layout: home
 </div>
 <hr>
 <h4>-</h4>
+
+{% assign sorted_missions = site.missions | sort: 'position' %}
+{% for item in sorted_missions %}
+
+<div class="grid">
+<div class="grid__item palm--one-whole lap--one-half desk--three-twelfths">
+<h5>{{ item.title }}</h5>
+<p class="channels">{{content}}</p>
+<p><a href="{{ item.link }}">{{ item.link }}</a></p>
+</div><!--
+
+         --><div class="grid__item palm--one-whole lap--one-half desk--seven-twelfths push--desk--two-twelfths">
+        <a href="{{ item.link }}"><img src="{{ item.image }}" alt="{{ item.title }}"></a>
+    </div>
+
+</div>
+<h4>-</h4
+  
+{% endfor %}
+
+
+
+
+
 <div class="grid">
 <div class="grid__item palm--one-whole lap--one-half desk--three-twelfths">
 <h5>The Chimp Store</h5>
