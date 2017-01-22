@@ -1,6 +1,7 @@
 ---
 title: Attack
 date: 2017-01-22 14:59:00 Z
+position: 3
 image: "/uploads/attack.jpg"
 link: https://www.attackmagazine.com
 ---
