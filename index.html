@@ -3,6 +3,7 @@ title: Brave the Skies | Shopify Experts ¸. • ● *
 excerpt: 'We are on a mission. We are UK Shopify Experts making e-commerce sites based
   in York, earth. Lift your head, brave the skies ☆  '
 layout: home
+image: "/img/share.jpg"
 ---
 
 <div class="grid">
@@ -23,7 +24,7 @@ layout: home
 <h4>-</h4>
 {% assign sorted_missions = site.missions | sort: 'position'  %}
 
-{% for item in sorted_missions | limit:5 %}
+{% for item in sorted_missions limit:5 %}
 <div class="grid">
   <div class="grid__item palm--one-whole lap--one-half desk--three-twelfths">
     <h5>{{ item.title }}</h5>

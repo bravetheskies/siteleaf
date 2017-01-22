@@ -18,8 +18,8 @@ defaults:
   values:
     layout: post
     permalink: "/logs/:title/"
-    image: 
-    description: 
+    image:
+    description:
 - scope:
     path: ''
     type: pages
@@ -29,8 +29,8 @@ defaults:
     path: ''
     type: missions
   values:
-    image: 
-    link: 
+    image:
+    link:
 permalink: pretty
 repository: bravetheskies/siteleaf
 url: https://bravetheskies.com
@@ -42,7 +42,7 @@ twitter:
 facebook:
   publisher: bravetheskies
 logo: "/apple-touch-icon.png"
-social: 
+social:
 links:
 - https://twitter.com/bravetheskies
 - https://www.facebook.com/bravetheskies
