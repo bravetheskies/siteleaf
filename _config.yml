@@ -30,13 +30,12 @@ twitter:
 facebook:
   publisher: bravetheskies
 logo: apple-touch-icon.png
-social:
-name: Brave the Skies
+social: 
 links:
-  - https://twitter.com/bravetheskies
-  - https://www.facebook.com/bravetheskies
-  - https://www.linkedin.com/in/BenBalter
-  - https://plus.google.com/+bravetheskies
+- https://twitter.com/bravetheskies
+- https://www.facebook.com/bravetheskies
+- https://www.linkedin.com/in/BenBalter
+- https://plus.google.com/+bravetheskies
 gems:
 - jekyll-seo-tag
 - jekyll-github-metadata
