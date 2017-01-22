@@ -34,7 +34,6 @@ defaults:
 permalink: pretty
 repository: bravetheskies/siteleaf
 url: https://bravetheskies.com
-name: Brave the Skies
 email: contact@bravetheskies.com
 google_analytics: UA-10793928-1
 twitter:
@@ -43,10 +42,10 @@ facebook:
   publisher: bravetheskies
 logo: "/apple-touch-icon.png"
 social:
+name: Brave the Skies
 links:
 - https://twitter.com/bravetheskies
 - https://www.facebook.com/bravetheskies
-- https://www.linkedin.com/in/BenBalter
 - https://plus.google.com/+bravetheskies
 gems:
 - jekyll-seo-tag
