@@ -1,93 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="css/csswizardry-grids.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/wallop.css">
-  <link rel="stylesheet" href="css/wallop--fade.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
   {% include head.html %}
-</head>
-<body>
-  <header>
-      <div class="Container wide">
-  <div class="grid">
-          <div class="grid__item palm--one-half lap--one-quarter desk--one-quarter left">
-<img src="img/btslogo.svg" class="logo">
-          </div><!--
-         --><div class="grid__item palm--one-half lap--three-quarters desk--three-quarters right">
-<div class="contact"><!--<a href="tel:01904 211088" class="link">01904 211088</a>--> <a href="mailto:contact@bravetheskies.com" class="link">Make Contact</a></div>
-          </div>
-  </div>
-</header>
-<!-- SLIDER STARTS -->
-    <div class="Wallop Wallop--fade">
-        <div class="Wallop-list">
-           <div class="Wallop-item brave">
-                <div class="cellholder">
-                   <div class="cell bottom"><h1>Brave</h1></div>
-                </div>
-            </div>
-            <div class="Wallop-item the">
-                <div class="cellholder">
-                   <div class="cell middle"><h1>the</h1></div>
-                </div>
-            </div>
-            <div class="Wallop-item skies">
-                <div class="cellholder">
-                    <div class="cell top">
-                    <div class="apeface"></div>
-                    <h1>Skies</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="Wallop-item skies">
-                <div class="cellholder">
-                    <div class="cell top">
-                    <div class="apeface"></div>
-                    <h1>Skies</h1>
-                    </div>
-                </div>
-            </div>
 
+  <body>
+
+    {% include header.html %}
+
+    <!-- SLIDER STARTS -->
+        <div class="Wallop Wallop--fade">
+            <div class="Wallop-list">
+               <div class="Wallop-item brave">
+                    <div class="cellholder">
+                       <div class="cell bottom"><h1>Brave</h1></div>
+                    </div>
+                </div>
+                <div class="Wallop-item the">
+                    <div class="cellholder">
+                       <div class="cell middle"><h1>the</h1></div>
+                    </div>
+                </div>
+                <div class="Wallop-item skies">
+                    <div class="cellholder">
+                        <div class="cell top">
+                        <div class="apeface"></div>
+                        <h1>Skies</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="Wallop-item skies">
+                    <div class="cellholder">
+                        <div class="cell top">
+                        <div class="apeface"></div>
+                        <h1>Skies</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+             <a href="#main" class="link_classname about">Briefing</a>
+             <a href="https://experts.shopify.com/brave-the-skies" class="shopify"><img src="img/shopifyexperts.png"></a>
         </div>
-         <a href="#main" class="link_classname about">Briefing</a>
-         <a href="https://experts.shopify.com/brave-the-skies" class="shopify"><img src="img/shopifyexperts.png"></a>
+        <!-- SLIDER ENDS -->
+
+    <div id="main" class="Container">
+        {{ content }}
     </div>
-    <!-- SLIDER ENDS -->
-  <div id="main" class="Container">
-    {{ content }}
 
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
 
-    <hr>
-          <div class="grid">
-                  <div class="grid__item one-whole makecontact">
-                  <a href="mailto:contact@bravetheskies.com">contact@bravetheskies.com</a> / +44 (0)1904 211088
-                  </div>
-          </div>
-          <footer>
-
-              <div class="grid">
-                  <div class="grid__item palm--one-whole lap--one-half desk--one-half left">
-
-                      <!--<p><a href="http://instagram.com/bravetheskies" target="_blank">Instagram</a> — <a href="https://twitter.com/bravetheskies" target="_blank">Twitter</a>
-                      </p>-->
-                       <span class="address">Brave the Skies LTD</br>9 Barleycorn Yard, York, YO1 9TX</span>
-                  </div><!--
-
-
-                   --><div class="grid__item palm--one-whole lap--one-half desk--one-half right">
-                  <a href="https://experts.shopify.com/brave-the-skies"><img src="img/shopifyexpertsblack.png" class="experts" align="bottom"></a>
-                  </div>
-              </div>
-
-          </footer>
-  </div>
-{% include scripts.html %}
-</body>
 </html>
